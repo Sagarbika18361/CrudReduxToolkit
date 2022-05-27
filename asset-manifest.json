@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CrudReduxToolkit/static/css/main.0b4e74b4.css",
+    "main.js": "/CrudReduxToolkit/static/js/main.934c1caa.js",
+    "index.html": "/CrudReduxToolkit/index.html",
+    "main.0b4e74b4.css.map": "/CrudReduxToolkit/static/css/main.0b4e74b4.css.map",
+    "main.934c1caa.js.map": "/CrudReduxToolkit/static/js/main.934c1caa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b4e74b4.css",
+    "static/js/main.934c1caa.js"
+  ]
+}
