@@ -17,7 +17,7 @@ const ViewStudent = () => {
     return () => {
       dispatch(clearStudentt())
     };
-  }, [dispatch]);
+  });
 
   return (
     <>
