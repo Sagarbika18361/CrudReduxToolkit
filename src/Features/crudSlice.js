@@ -115,7 +115,7 @@ export const crudSlice = createSlice({
     ]
 },reducers: {
   readStudent: (state, action) => {
-    state.viewStudent = state.students.find((el) => el.id == action.payload);
+    state.viewStudent = state.students.find((el) => el.id === action.payload);
   },
   clearStudentt: (state) => {
     state.viewStudent = {
@@ -130,7 +130,7 @@ export const crudSlice = createSlice({
     state.students = [ action.payload , ...state.students ];
   },
   deleteStudent: (state, action) => {
-    state.students = state.students.filter((el) => el.id != action.payload);
+    state.students = state.students.filter((el) => el.id !== action.payload);
   },
   // updateStudent: (state, action) => {
   //   console.log(state,action)
@@ -155,7 +155,7 @@ export const crudSlice = createSlice({
 
   updateStudent: (state, action) => {
     state.students = state.students.map((el) =>
-      el.id == action.payload.id ? action.payload : el
+      el.id === action.payload.id ? action.payload : el
     );
   },
 },
