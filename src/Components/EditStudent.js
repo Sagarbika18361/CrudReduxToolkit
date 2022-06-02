@@ -15,7 +15,7 @@ const EditStudent = () => {
    const {id} = useParams();
   const user = useSelector((state) => state.stu.students)
   
-  const data = user.find((user) => user.id == id )
+  const data = user.find((user) => user.id === id )
 
   // console.log(data)
 
@@ -36,7 +36,7 @@ const EditStudent = () => {
                 
             }
         )
-  const handleUpdate =(e) =>{
+  const handleUpdate = (e) =>{
       e.preventDefault()
       // console.log(values)
       dispatch(updateStudent(values, id ))
