@@ -15,7 +15,7 @@ const EditStudent = () => {
    const {id} = useParams();
   const user = useSelector((state) => state.stu.students)
   
-  const data = user.find((user) => user.id === id )
+  const data = user.find((user) => user.id.toString() === id.toString() )
 
   // console.log(data)
 
