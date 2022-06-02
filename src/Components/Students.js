@@ -35,7 +35,7 @@ const Students = () => {
                     <h6 className="card-text overflow-hidden">Phone: {data.phone}</h6>
                     <Link to={`/student/${data.id}`} className="btn btn-sm btn-primary ms-3 mt-2 me-2">View</Link>
                     <Link to={`/editstudent/${data.id}`} className="btn btn-sm btn-success me-2 mt-2">Edit</Link>
-                    <a href="#" onClick={() => deleteStu(data.id)} className="btn btn-sm btn-danger me-2 mt-2">Delete</a>
+                    <a href="/" onClick={() => deleteStu(data.id)} className="btn btn-sm btn-danger me-2 mt-2">Delete</a>
                   </div>
                 </div>
               </div>
